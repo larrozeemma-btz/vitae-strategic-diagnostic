@@ -1,0 +1,473 @@
+{
+  "headline": {
+    "gmv": 8046236,
+    "net_revenue": 7955632,
+    "aov": 317.53,
+    "gross_margin_pct": 0.727,
+    "contribution_margin_pct": 0.6746,
+    "total_marketing_spend": 2622505,
+    "blended_cac": 786.83,
+    "n_customers": 4200,
+    "n_orders": 25055
+  },
+  "yoy": [
+    {
+      "year": 2023,
+      "net_revenue": 609888.57,
+      "orders": 1881,
+      "aov": 324.24,
+      "cm": 410142.77,
+      "cm_pct": 0.67
+    },
+    {
+      "year": 2024,
+      "net_revenue": 1853757.41,
+      "orders": 5910,
+      "aov": 313.66,
+      "cm": 1253196.82,
+      "cm_pct": 0.68
+    },
+    {
+      "year": 2025,
+      "net_revenue": 3668478.4,
+      "orders": 11689,
+      "aov": 313.84,
+      "cm": 2478195.21,
+      "cm_pct": 0.68
+    },
+    {
+      "year": 2026,
+      "net_revenue": 1823507.9,
+      "orders": 5575,
+      "aov": 327.09,
+      "cm": 1225485.42,
+      "cm_pct": 0.67
+    }
+  ],
+  "segments": [
+    {
+      "segment": "VIP Longevity Loyalists",
+      "customers": 367,
+      "total_revenue": 2406786.49,
+      "total_contribution": 1667975.94,
+      "avg_orders": 17.66,
+      "avg_ltv": 6558.0,
+      "rev_share": 0.3,
+      "cust_share": 0.09
+    },
+    {
+      "segment": "Aesthetic Enthusiasts",
+      "customers": 602,
+      "total_revenue": 1558589.1,
+      "total_contribution": 1088912.6,
+      "avg_orders": 10.13,
+      "avg_ltv": 2589.02,
+      "rev_share": 0.2,
+      "cust_share": 0.15
+    },
+    {
+      "segment": "Wellness Curious",
+      "customers": 1246,
+      "total_revenue": 1393481.37,
+      "total_contribution": 967921.9,
+      "avg_orders": 3.93,
+      "avg_ltv": 1118.36,
+      "rev_share": 0.18,
+      "cust_share": 0.31
+    },
+    {
+      "segment": "Lifestyle Buyers",
+      "customers": 741,
+      "total_revenue": 1224174.34,
+      "total_contribution": 755899.26,
+      "avg_orders": 2.61,
+      "avg_ltv": 1652.06,
+      "rev_share": 0.15,
+      "cust_share": 0.18
+    },
+    {
+      "segment": "New Pet Parents",
+      "customers": 440,
+      "total_revenue": 850686.2,
+      "total_contribution": 557415.16,
+      "avg_orders": 6.53,
+      "avg_ltv": 1933.38,
+      "rev_share": 0.11,
+      "cust_share": 0.11
+    },
+    {
+      "segment": "Bargain Hunters",
+      "customers": 469,
+      "total_revenue": 436874.52,
+      "total_contribution": 273913.77,
+      "avg_orders": 5.1,
+      "avg_ltv": 931.5,
+      "rev_share": 0.05,
+      "cust_share": 0.12
+    },
+    {
+      "segment": "Churned",
+      "customers": 204,
+      "total_revenue": 85040.26,
+      "total_contribution": 54981.59,
+      "avg_orders": 1.89,
+      "avg_ltv": 416.86,
+      "rev_share": 0.01,
+      "cust_share": 0.05
+    }
+  ],
+  "channels": [
+    {
+      "channel": "Email/Referral",
+      "spend": 102288.44,
+      "new_customers": 416,
+      "cac": 245.89,
+      "net_revenue": 816267.05,
+      "roas": 7.98
+    },
+    {
+      "channel": "Paid Social - TikTok",
+      "spend": 175946.85,
+      "new_customers": 249,
+      "cac": 706.61,
+      "net_revenue": 552369.54,
+      "roas": 3.14
+    },
+    {
+      "channel": "Paid Social - Meta",
+      "spend": 927459.78,
+      "new_customers": 1216,
+      "cac": 762.71,
+      "net_revenue": 2338650.4,
+      "roas": 2.52
+    },
+    {
+      "channel": "Influencer / Affiliate",
+      "spend": 509224.49,
+      "new_customers": 587,
+      "cac": 867.5,
+      "net_revenue": 1047409.9,
+      "roas": 2.06
+    },
+    {
+      "channel": "Paid Search - Google",
+      "spend": 736476.68,
+      "new_customers": 739,
+      "cac": 996.59,
+      "net_revenue": 1369238.13,
+      "roas": 1.86
+    },
+    {
+      "channel": "Podcast Sponsorship",
+      "spend": 171108.92,
+      "new_customers": 126,
+      "cac": 1358.01,
+      "net_revenue": 179730.38,
+      "roas": 1.05
+    }
+  ],
+  "subscription": [
+    {
+      "is_subscriber": false,
+      "customers": 3098,
+      "avg_ltv": 1556.13,
+      "avg_orders": 4.99,
+      "avg_contribution": 1036.6,
+      "label": "Non-Subscriber"
+    },
+    {
+      "is_subscriber": true,
+      "customers": 971,
+      "avg_ltv": 3228.37,
+      "avg_orders": 9.89,
+      "avg_contribution": 2220.0,
+      "label": "Subscriber"
+    }
+  ],
+  "categories": [
+    {
+      "category": "Longevity Supplements",
+      "revenue": 3092618.0,
+      "cogs": 686935.8,
+      "units": 36255,
+      "gross_margin": 2405682.2,
+      "gm_pct": 0.78
+    },
+    {
+      "category": "Lifestyle & Home",
+      "revenue": 1862796.0,
+      "cogs": 659714.0,
+      "units": 12834,
+      "gross_margin": 1203082.0,
+      "gm_pct": 0.65
+    },
+    {
+      "category": "Premium Nutrition",
+      "revenue": 906246.0,
+      "cogs": 318203.4,
+      "units": 18214,
+      "gross_margin": 588042.6,
+      "gm_pct": 0.65
+    },
+    {
+      "category": "Aesthetic Grooming",
+      "revenue": 905532.0,
+      "cogs": 150507.0,
+      "units": 20187,
+      "gross_margin": 755025.0,
+      "gm_pct": 0.83
+    }
+  ],
+  "sku_matrix": [
+    {
+      "sku": "VC-AEST-001",
+      "revenue": 199868.0,
+      "cogs": 31703.2,
+      "gm_pct": 0.841,
+      "growth": 0.393,
+      "name": "Botanical Coat Serum",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-AEST-002",
+      "revenue": 111968.0,
+      "cogs": 17844.9,
+      "gm_pct": 0.841,
+      "growth": 0.362,
+      "name": "Hydrating Paw Balm",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-AEST-003",
+      "revenue": 160800.0,
+      "cogs": 28475.0,
+      "gm_pct": 0.823,
+      "growth": 0.322,
+      "name": "Spa Shampoo & Conditioner Duo",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-AEST-004",
+      "revenue": 151712.0,
+      "cogs": 26894.4,
+      "gm_pct": 0.823,
+      "growth": 0.249,
+      "name": "Dental Polish Kit",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-AEST-005",
+      "revenue": 121284.0,
+      "cogs": 18529.5,
+      "gm_pct": 0.847,
+      "growth": 0.315,
+      "name": "Tear Stain Refining Solution",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-AEST-006",
+      "revenue": 159900.0,
+      "cogs": 27060.0,
+      "gm_pct": 0.831,
+      "growth": 0.442,
+      "name": "Anti-Shed Coat Treatment",
+      "category": "Aesthetic Grooming"
+    },
+    {
+      "sku": "VC-LIFE-001",
+      "revenue": 477414.0,
+      "cogs": 181872.0,
+      "gm_pct": 0.619,
+      "growth": 0.464,
+      "name": "Orthopedic Memory Bed (M)",
+      "category": "Lifestyle & Home"
+    },
+    {
+      "sku": "VC-LIFE-002",
+      "revenue": 635448.0,
+      "cogs": 250096.0,
+      "gm_pct": 0.606,
+      "growth": 0.564,
+      "name": "Orthopedic Memory Bed (L)",
+      "category": "Lifestyle & Home"
+    },
+    {
+      "sku": "VC-LIFE-003",
+      "revenue": 173944.0,
+      "cogs": 46044.0,
+      "gm_pct": 0.735,
+      "growth": 0.541,
+      "name": "Ceramic Slow Feeder",
+      "category": "Lifestyle & Home"
+    },
+    {
+      "sku": "VC-LIFE-004",
+      "revenue": 317564.0,
+      "cogs": 97318.0,
+      "gm_pct": 0.694,
+      "growth": 0.524,
+      "name": "Italian Leather Collar",
+      "category": "Lifestyle & Home"
+    },
+    {
+      "sku": "VC-LIFE-005",
+      "revenue": 258426.0,
+      "cogs": 84384.0,
+      "gm_pct": 0.673,
+      "growth": 0.243,
+      "name": "Hand-Loomed Throw Blanket",
+      "category": "Lifestyle & Home"
+    },
+    {
+      "sku": "VC-LONG-001",
+      "revenue": 553046.0,
+      "cogs": 114959.0,
+      "gm_pct": 0.792,
+      "growth": 0.361,
+      "name": "Cellular Renewal Drops (NMN+)",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-LONG-002",
+      "revenue": 399936.0,
+      "cogs": 88735.8,
+      "gm_pct": 0.778,
+      "growth": 0.258,
+      "name": "Joint Vitality Complex",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-LONG-003",
+      "revenue": 331290.0,
+      "cogs": 72393.0,
+      "gm_pct": 0.781,
+      "growth": 0.324,
+      "name": "Cognitive Clarity Chews",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-LONG-004",
+      "revenue": 1128237.0,
+      "cogs": 264726.0,
+      "gm_pct": 0.765,
+      "growth": 0.318,
+      "name": "Senior Vitality Bundle",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-LONG-005",
+      "revenue": 292677.0,
+      "cogs": 62716.5,
+      "gm_pct": 0.786,
+      "growth": 0.461,
+      "name": "Omega Marine Elixir",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-LONG-006",
+      "revenue": 387432.0,
+      "cogs": 83405.5,
+      "gm_pct": 0.785,
+      "growth": 0.363,
+      "name": "Microbiome Restore (Probiotics)",
+      "category": "Longevity Supplements"
+    },
+    {
+      "sku": "VC-NUTR-001",
+      "revenue": 289536.0,
+      "cogs": 115072.0,
+      "gm_pct": 0.603,
+      "growth": 0.483,
+      "name": "Heritage Beef Raw Blend (4lb)",
+      "category": "Premium Nutrition"
+    },
+    {
+      "sku": "VC-NUTR-002",
+      "revenue": 297414.0,
+      "cogs": 121504.5,
+      "gm_pct": 0.591,
+      "growth": 0.339,
+      "name": "Wild Salmon Bowl (4lb)",
+      "category": "Premium Nutrition"
+    },
+    {
+      "sku": "VC-NUTR-003",
+      "revenue": 100492.0,
+      "cogs": 26917.5,
+      "gm_pct": 0.732,
+      "growth": 0.256,
+      "name": "Bone Broth Reserve",
+      "category": "Premium Nutrition"
+    },
+    {
+      "sku": "VC-NUTR-004",
+      "revenue": 79838.0,
+      "cogs": 18870.8,
+      "gm_pct": 0.764,
+      "growth": 0.257,
+      "name": "Functional Treats (Adaptogens)",
+      "category": "Premium Nutrition"
+    },
+    {
+      "sku": "VC-NUTR-005",
+      "revenue": 138966.0,
+      "cogs": 35838.6,
+      "gm_pct": 0.742,
+      "growth": 0.334,
+      "name": "Bio-Active Kibble Topper",
+      "category": "Premium Nutrition"
+    }
+  ],
+  "inventory": {
+    "status_counts": {
+      "Healthy": 21,
+      "Overstocked": 1
+    },
+    "cash_in_overstock": 56016,
+    "low_stock_skus": []
+  },
+  "support": {
+    "ticket_rate_per_order": 0.1772,
+    "avg_resolution_hours": 15.8,
+    "type_mix": {
+      "Shipping Delay": 1378,
+      "Product Question": 843,
+      "Return Request": 661,
+      "Subscription Mgmt": 543,
+      "Damaged Item": 345,
+      "Billing Issue": 311,
+      "Compliment / Feedback": 191,
+      "Wrong Item Shipped": 168
+    }
+  },
+  "returns": [
+    {
+      "segment": "Aesthetic Enthusiasts",
+      "return_rate": 0.0558
+    },
+    {
+      "segment": "Wellness Curious",
+      "return_rate": 0.0609
+    },
+    {
+      "segment": "New Pet Parents",
+      "return_rate": 0.0613
+    },
+    {
+      "segment": "VIP Longevity Loyalists",
+      "return_rate": 0.0636
+    },
+    {
+      "segment": "Bargain Hunters",
+      "return_rate": 0.0673
+    },
+    {
+      "segment": "Churned",
+      "return_rate": 0.1013
+    },
+    {
+      "segment": "Lifestyle Buyers",
+      "return_rate": 0.1155
+    }
+  ]
+}

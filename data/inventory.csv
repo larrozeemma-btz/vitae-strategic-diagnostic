@@ -1,0 +1,23 @@
+sku,product_name,category,unit_cost,unit_price,units_on_hand,units_sold_90d,avg_daily_velocity,days_of_supply,reorder_point,lead_time_days,stock_status,warehouse
+VC-LONG-001,Cellular Renewal Drops (NMN+),Longevity Supplements,18.5,89.0,207,1029,11.43,18.1,240,21,Healthy,NJ-Edison
+VC-LONG-002,Joint Vitality Complex,Longevity Supplements,14.2,64.0,223,1009,11.21,19.9,235,21,Healthy,NJ-Edison
+VC-LONG-003,Cognitive Clarity Chews,Longevity Supplements,11.8,54.0,196,1016,11.29,17.4,237,21,Healthy,NJ-Edison
+VC-LONG-004,Senior Vitality Bundle,Longevity Supplements,42.0,179.0,265,1070,11.89,22.3,249,21,Healthy,NJ-Edison
+VC-LONG-005,Omega Marine Elixir,Longevity Supplements,10.5,49.0,712,1065,11.83,60.2,248,21,Healthy,Atlanta-GA
+VC-NUTR-001,Heritage Beef Raw Blend (4lb),Premium Nutrition,31.0,78.0,716,734,8.16,87.7,171,21,Healthy,NJ-Edison
+VC-NUTR-002,Wild Salmon Bowl (4lb),Premium Nutrition,33.5,82.0,726,623,6.92,104.9,145,21,Healthy,Reno-NV
+VC-NUTR-003,Bone Broth Reserve,Premium Nutrition,7.5,28.0,510,591,6.57,77.6,137,21,Healthy,Atlanta-GA
+VC-NUTR-004,Functional Treats (Adaptogens),Premium Nutrition,5.2,22.0,251,579,6.43,39.0,135,21,Healthy,NJ-Edison
+VC-NUTR-005,Bio-Active Kibble Topper,Premium Nutrition,9.8,38.0,547,609,6.77,80.8,142,21,Healthy,Atlanta-GA
+VC-AEST-001,Botanical Coat Serum,Aesthetic Grooming,9.2,58.0,602,588,6.53,92.2,137,21,Healthy,NJ-Edison
+VC-AEST-002,Hydrating Paw Balm,Aesthetic Grooming,5.1,32.0,533,647,7.19,74.1,150,21,Healthy,NJ-Edison
+VC-AEST-003,Spa Shampoo & Conditioner Duo,Aesthetic Grooming,8.5,48.0,453,547,6.08,74.5,127,21,Healthy,Reno-NV
+VC-AEST-004,Dental Polish Kit,Aesthetic Grooming,7.8,44.0,406,513,5.7,71.2,119,21,Healthy,Reno-NV
+VC-AEST-005,Tear Stain Refining Solution,Aesthetic Grooming,5.5,36.0,153,558,6.2,24.7,130,21,Healthy,Reno-NV
+VC-LIFE-001,Orthopedic Memory Bed (M),Lifestyle & Home,72.0,189.0,778,439,4.88,159.4,102,21,Overstocked,NJ-Edison
+VC-LIFE-002,Orthopedic Memory Bed (L),Lifestyle & Home,98.0,249.0,230,503,5.59,41.1,117,21,Healthy,NJ-Edison
+VC-LIFE-003,Ceramic Slow Feeder,Lifestyle & Home,18.0,68.0,417,498,5.53,75.4,116,21,Healthy,NJ-Edison
+VC-LIFE-004,Italian Leather Collar,Lifestyle & Home,38.0,124.0,505,473,5.26,96.0,110,21,Healthy,NJ-Edison
+VC-LIFE-005,Hand-Loomed Throw Blanket,Lifestyle & Home,32.0,98.0,609,476,5.29,115.1,111,21,Healthy,Atlanta-GA
+VC-LONG-006,Microbiome Restore (Probiotics),Longevity Supplements,15.5,72.0,479,1099,12.21,39.2,256,21,Healthy,Atlanta-GA
+VC-AEST-006,Anti-Shed Coat Treatment,Aesthetic Grooming,8.8,52.0,671,619,6.88,97.5,144,21,Healthy,Reno-NV

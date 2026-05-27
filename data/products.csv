@@ -1,0 +1,23 @@
+sku,name,category,subcategory,price,cogs,weight_oz,launched
+VC-LONG-001,Cellular Renewal Drops (NMN+),Longevity Supplements,Anti-Aging,89.0,18.5,2,2022-03-15
+VC-LONG-002,Joint Vitality Complex,Longevity Supplements,Mobility,64.0,14.2,4,2022-01-10
+VC-LONG-003,Cognitive Clarity Chews,Longevity Supplements,Cognitive,54.0,11.8,6,2022-06-20
+VC-LONG-004,Senior Vitality Bundle,Longevity Supplements,Bundle,179.0,42.0,12,2022-09-01
+VC-LONG-005,Omega Marine Elixir,Longevity Supplements,Skin & Coat,49.0,10.5,8,2022-04-05
+VC-NUTR-001,Heritage Beef Raw Blend (4lb),Premium Nutrition,Raw Food,78.0,31.0,64,2022-01-15
+VC-NUTR-002,Wild Salmon Bowl (4lb),Premium Nutrition,Raw Food,82.0,33.5,64,2022-02-01
+VC-NUTR-003,Bone Broth Reserve,Premium Nutrition,Hydration,28.0,7.5,32,2022-03-20
+VC-NUTR-004,Functional Treats (Adaptogens),Premium Nutrition,Treats,22.0,5.2,6,2022-05-10
+VC-NUTR-005,Bio-Active Kibble Topper,Premium Nutrition,Toppers,38.0,9.8,16,2022-07-15
+VC-AEST-001,Botanical Coat Serum,Aesthetic Grooming,Serums,58.0,9.2,4,2022-02-20
+VC-AEST-002,Hydrating Paw Balm,Aesthetic Grooming,Skincare,32.0,5.1,2,2022-01-25
+VC-AEST-003,Spa Shampoo & Conditioner Duo,Aesthetic Grooming,Bath,48.0,8.5,24,2022-04-10
+VC-AEST-004,Dental Polish Kit,Aesthetic Grooming,Dental,44.0,7.8,4,2022-06-01
+VC-AEST-005,Tear Stain Refining Solution,Aesthetic Grooming,Skincare,36.0,5.5,4,2022-08-15
+VC-LIFE-001,Orthopedic Memory Bed (M),Lifestyle & Home,Bedding,189.0,72.0,120,2022-03-01
+VC-LIFE-002,Orthopedic Memory Bed (L),Lifestyle & Home,Bedding,249.0,98.0,180,2022-03-01
+VC-LIFE-003,Ceramic Slow Feeder,Lifestyle & Home,Feeding,68.0,18.0,48,2022-05-20
+VC-LIFE-004,Italian Leather Collar,Lifestyle & Home,Accessories,124.0,38.0,8,2022-07-01
+VC-LIFE-005,Hand-Loomed Throw Blanket,Lifestyle & Home,Bedding,98.0,32.0,32,2022-09-10
+VC-LONG-006,Microbiome Restore (Probiotics),Longevity Supplements,Gut Health,72.0,15.5,4,2024-03-15
+VC-AEST-006,Anti-Shed Coat Treatment,Aesthetic Grooming,Serums,52.0,8.8,6,2024-05-01
