@@ -6,7 +6,7 @@ Impact ranges are directional estimates derived from the dataset, intended to pr
 
 ---
 
-## Tier 1 — Do now (high impact, low effort)
+## Tier 1: Do now (high impact, low effort)
 
 ### 1. Reallocate paid spend toward efficient channels and retention
 - **Hypothesis:** the marketing budget is spread evenly across channels with 7x different efficiency.
@@ -25,7 +25,7 @@ Impact ranges are directional estimates derived from the dataset, intended to pr
 
 ---
 
-## Tier 2 — Plan this quarter (high impact, medium effort)
+## Tier 2: Plan this quarter (high impact, medium effort)
 
 ### 3. Subscription conversion program
 - **Hypothesis:** converting high-intent one-time buyers to subscribers is the highest-leverage retention play.

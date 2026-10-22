@@ -1,6 +1,6 @@
 """
 Premium Pet Ecommerce Dataset Generator
-Brand: VITAE & CO. — Aesthetic & Longevity Pet Products (US National)
+Brand: VITAE & CO.: Aesthetic & Longevity Pet Products (US National)
 
 Designed for portfolio analysis: BizOps, Strategy, Consulting Associate
 Showcases: segmentation, cohort/LTV, marketing attribution, P&L, ops, churn
@@ -54,7 +54,7 @@ products = [
 products_df = pd.DataFrame(products)
 
 # ============================================================
-# 2. CUSTOMERS — segmented realistically
+# 2. CUSTOMERS: segmented realistically
 # ============================================================
 N_CUSTOMERS = 4200
 
@@ -109,7 +109,7 @@ for i in range(N_CUSTOMERS):
     segment_probs = segment_probs / segment_probs.sum()
     segment = np.random.choice(list(segments.keys()), p=segment_probs)
 
-    # First order date — weighted toward 2023-2024 with growth
+    # First order date: weighted toward 2023-2024 with growth
     months_ago_probs = np.array([0.04]*6 + [0.035]*6 + [0.025]*12 + [0.018]*16)
     months_ago_probs = months_ago_probs / months_ago_probs.sum()
     months_ago = np.random.choice(range(0, 40), p=months_ago_probs)
@@ -118,7 +118,7 @@ for i in range(N_CUSTOMERS):
     pet_type = random.choice(pet_types)
     pet_age = np.random.choice(pet_age_brackets, p=pet_age_weights)
 
-    # Subscription status — VIPs & Wellness more likely
+    # Subscription status: VIPs & Wellness more likely
     sub_rate = {'VIP Longevity Loyalists': 0.85, 'Aesthetic Enthusiasts': 0.35,
                 'Wellness Curious': 0.20, 'Lifestyle Buyers': 0.08,
                 'Bargain Hunters': 0.05, 'New Pet Parents': 0.25, 'Churned': 0.0}
@@ -139,7 +139,7 @@ for i in range(N_CUSTOMERS):
 customers_df = pd.DataFrame(customers)
 
 # ============================================================
-# 3. ORDERS — Realistic seasonality, AOV by segment, churn
+# 3. ORDERS: Realistic seasonality, AOV by segment, churn
 # ============================================================
 print("Generating orders...")
 
@@ -187,7 +187,7 @@ for _, cust in customers_df.iterrows():
     base_orders = behavior['orders_per_yr'] * (days_active / 365.0)
     n_orders = max(1, int(np.random.poisson(base_orders)))
 
-    # Churn logic — if Churned segment, only first ~30% of timeline
+    # Churn logic: if Churned segment, only first ~30% of timeline
     if cust['segment'] == 'Churned':
         n_orders = random.randint(1, 3)
         churn_cutoff_days = int(days_active * 0.4)
@@ -220,7 +220,7 @@ for _, cust in customers_df.iterrows():
             promo_code = 'WELCOME10'
             discount_pct = 0.10
 
-        # Pick items — bias toward segment preference
+        # Pick items: bias toward segment preference
         n_items = np.random.choice([1, 2, 3, 4, 5], p=[0.35, 0.32, 0.18, 0.10, 0.05])
         order_id_counter += 1
         order_id = f"ORD-{order_id_counter}"
@@ -253,7 +253,7 @@ for _, cust in customers_df.iterrows():
         discount_amt = round(gross_revenue * discount_pct, 2)
         net_revenue = round(gross_revenue - discount_amt, 2)
 
-        # Shipping — free over $75 (their threshold), else $9.95; expedited 8% of orders
+        # Shipping: free over $75 (their threshold), else $9.95; expedited 8% of orders
         shipping_method = 'Standard'
         if net_revenue >= 75:
             shipping_cost = 0.0
@@ -267,13 +267,13 @@ for _, cust in customers_df.iterrows():
             shipping_cost = 0.0
 
         total_cogs = sum(s['cogs'] * q for s, q in chosen_skus) * behavior['aov_mult']
-        # Fulfillment cost — variable by weight
+        # Fulfillment cost: variable by weight
         total_weight = sum(s['weight_oz'] * q for s, q in chosen_skus)
         fulfillment_cost = round(3.50 + total_weight * 0.045, 2)
         # Payment processing ~ 2.9% + $0.30
         payment_fee = round(net_revenue * 0.029 + 0.30, 2)
 
-        # Returns — 6% base, higher for first-time buyers and Lifestyle
+        # Returns: 6% base, higher for first-time buyers and Lifestyle
         return_rate = 0.06
         if cust['segment'] == 'Lifestyle Buyers':
             return_rate = 0.11
@@ -334,7 +334,7 @@ order_items_df = pd.DataFrame(order_items)
 print(f"Generated {len(customers_df)} customers, {len(orders_df)} orders, {len(order_items_df)} line items")
 
 # ============================================================
-# 4. MARKETING SPEND — monthly by channel
+# 4. MARKETING SPEND: monthly by channel
 # ============================================================
 print("Generating marketing spend...")
 

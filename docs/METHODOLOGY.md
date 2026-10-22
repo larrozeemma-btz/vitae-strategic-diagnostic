@@ -20,10 +20,10 @@ This document records the definitions, assumptions, and limitations behind the V
 
 ## Modeling assumptions
 
-- **LTV horizon:** observed lifetime within the data window (Jan 2023 – May 2026). Not extrapolated to a fixed 24-month forward LTV unless stated.
-- **Attribution:** single-touch — each customer is attributed to the acquisition channel recorded at signup. A real engagement would pressure-test this against multi-touch or a media-mix model.
+- **LTV horizon:** observed lifetime within the data window (Jan 2023 to May 2026). Not extrapolated to a fixed 24-month forward LTV unless stated.
+- **Attribution:** single-touch: each customer is attributed to the acquisition channel recorded at signup. A real engagement would pressure-test this against multi-touch or a media-mix model.
 - **CAC:** computed per channel-month from spend and net new customers. Always-on brand spend is included in channel spend, which inflates CAC in low-acquisition months (a realistic feature, not a bug).
-- **Contribution margin** excludes fixed overhead (salaries, software, warehouse lease) — it is a unit-economics view, not a full P&L.
+- **Contribution margin** excludes fixed overhead (salaries, software, warehouse lease); it is a unit-economics view, not a full P&L.
 - **Subscription churn** is approximated from order recency rather than billing events, since the synthetic data does not model subscription cancellations explicitly.
 
 ## Data realism calibration
@@ -38,9 +38,9 @@ The synthetic generator was tuned so the aggregate metrics fall within plausible
 
 ## Limitations
 
-1. **Synthetic data** — patterns are designed, so findings demonstrate *method*, not real market truth.
-2. **No fixed-cost layer** — contribution margin is not net profit.
-3. **Attribution is simplified** — single-touch acquisition channel only.
-4. **No competitive or market context** — this is an internal-data diagnostic only.
+1. **Synthetic data**: patterns are designed, so findings demonstrate *method*, not real market truth.
+2. **No fixed-cost layer**: contribution margin is not net profit.
+3. **Attribution is simplified**: single-touch acquisition channel only.
+4. **No competitive or market context**: this is an internal-data diagnostic only.
 
 These are stated explicitly because acknowledging the limits of an analysis is part of doing it credibly.

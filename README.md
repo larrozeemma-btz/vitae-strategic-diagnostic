@@ -1,4 +1,4 @@
-# VITAE & CO. — Strategic Diagnostic of a Premium DTC Pet Brand
+# VITAE & CO.: Strategic Diagnostic of a Premium DTC Pet Brand
 
 > A consultant-grade analytical case study: turning 88K rows of raw ecommerce data into a board-ready growth strategy.
 
@@ -14,11 +14,11 @@ VITAE & CO. is a premium direct-to-consumer pet brand selling aesthetic and long
 
 The mandate, framed as a CEO would frame it to a new analyst or consulting team:
 
-> *"We've grown fast, but blended CAC is creeping up and Q1 2026 contribution margin softened. Show me — with numbers — where to double down, where to cut, and what the next 12 months should look like."*
+> *"We've grown fast, but blended CAC is creeping up and Q1 2026 contribution margin softened. Show me, with numbers, where to double down, where to cut, and what the next 12 months should look like."*
 
 This repo is my answer: a structured, hypothesis-driven diagnostic that mirrors the analytical workpaper a Business Analyst or Consulting Associate would produce in the first weeks of an engagement.
 
-> **Note on the data:** the dataset is **synthetic** — generated programmatically to be realistic and internally consistent (see [`src/generate_dataset.py`](src/generate_dataset.py)). This lets me showcase analytical method without using any confidential information. Realism was a design goal: unit economics, seasonality, segment behavior, and channel efficiency were all calibrated to plausible DTC benchmarks.
+> **Note on the data:** the dataset is **synthetic**: generated programmatically to be realistic and internally consistent (see [`src/generate_dataset.py`](src/generate_dataset.py)). This lets me showcase analytical method without using any confidential information. Realism was a design goal: unit economics, seasonality, segment behavior, and channel efficiency were all calibrated to plausible DTC benchmarks.
 
 ---
 
@@ -38,11 +38,11 @@ I framed the diagnostic around the three questions the CEO actually asked, broke
 
 ## 🔑 Headline Findings
 
-1. **Revenue scaled 3.0x (2023→2024) then ~2.0x (2024→2025), but contribution margin compressed in early 2026** — growth was bought, not earned, and the efficiency is fading.
-2. **The VIP Longevity segment is 9% of customers but 30% of revenue**, with a lifetime value of **$6,558 — 7x the Bargain Hunter segment.** We under-invest in the people who matter most.
+1. **Revenue scaled 3.0x (2023→2024) then ~2.0x (2024→2025), but contribution margin compressed in early 2026**: growth was bought, not earned, and the efficiency is fading.
+2. **The VIP Longevity segment is 9% of customers but 30% of revenue**, with a lifetime value of **$6,558, or 7x the Bargain Hunter segment.** We under-invest in the people who matter most.
 3. **Subscribers are worth 2.1x non-subscribers** ($3,228 vs $1,556 LTV) and order nearly twice as often. Subscription is the single most important growth lever and it's under-penetrated.
 4. **Channel efficiency varies 7x:** Email/Referral returns **8.0x ROAS** while Podcast Sponsorship barely breaks even at **1.1x**. Reallocating spend is the fastest margin win available.
-5. **Lifestyle Buyers return at 11.6%** — nearly double the base rate — quietly eroding contribution margin in the highest-AOV category.
+5. **Lifestyle Buyers return at 11.6%**, nearly double the base rate, quietly eroding contribution margin in the highest-AOV category.
 
 ---
 
@@ -51,13 +51,13 @@ I framed the diagnostic around the three questions the CEO actually asked, broke
 ### 1 · Revenue scaled, but margin tells the real story
 ![Revenue & margin trend](outputs/figures/01_revenue_margin_trend.png)
 
-Net revenue climbed steadily, but the contribution-margin line reveals the issue the CEO sensed: profitability per dollar of revenue compressed even as the top line grew. **So what?** The growth engine is getting more expensive to run — the strategy work is about restoring efficiency, not just adding fuel.
+Net revenue climbed steadily, but the contribution-margin line reveals the issue the CEO sensed: profitability per dollar of revenue compressed even as the top line grew. **So what?** The growth engine is getting more expensive to run: the strategy work is about restoring efficiency, not just adding fuel.
 
 ### 2 · A small segment carries the business
 ![Segment value](outputs/figures/03_segment_value.png)
 ![LTV by segment](outputs/figures/04_ltv_by_segment.png)
 
-VIP Longevity Loyalists and Aesthetic Enthusiasts together are **24% of customers but 50% of revenue.** Their LTV dwarfs the rest. **So what?** Retention and expansion of these two segments should be the organizing principle of the marketing budget — not blanket top-of-funnel acquisition.
+VIP Longevity Loyalists and Aesthetic Enthusiasts together are **24% of customers but 50% of revenue.** Their LTV dwarfs the rest. **So what?** Retention and expansion of these two segments should be the organizing principle of the marketing budget, not blanket top-of-funnel acquisition.
 
 ### 3 · Marketing efficiency varies wildly by channel
 ![CAC by channel](outputs/figures/05_cac_by_channel.png)
@@ -67,7 +67,7 @@ Email/Referral and TikTok acquire below blended CAC; Podcast and Paid Search sit
 ### 4 · Subscription is the flywheel
 ![Subscription economics](outputs/figures/07_subscription_economics.png)
 
-Subscribers generate **2.1x the lifetime value** of one-time buyers. **So what?** Converting even a modest share of high-intent one-time buyers into subscribers compounds — this is the highest-leverage retention play.
+Subscribers generate **2.1x the lifetime value** of one-time buyers. **So what?** Converting even a modest share of high-intent one-time buyers into subscribers compounds: this is the highest-leverage retention play.
 
 ### 5 · The product portfolio, mapped
 ![SKU BCG matrix](outputs/figures/09_sku_bcg_matrix.png)
@@ -102,7 +102,7 @@ Prioritized on an **Impact × Effort** basis. Full reasoning in [`docs/RECOMMEND
 | 5 | Bundle entry SKUs toward high-margin Longevity category | Merch | +$120–180K margin | Low |
 | 6 | Fix shipping-delay root cause (18% ticket driver) | Ops | +CSAT, -CX cost | Medium |
 
-**Where to play / How to win:** Concentrate the next 12 months on the **VIP + Aesthetic customer × Longevity + Grooming category × Email/Referral + subscription channel** intersection — the brand's most profitable and most defensible core.
+**Where to play / How to win:** Concentrate the next 12 months on the **VIP + Aesthetic customer × Longevity + Grooming category × Email/Referral + subscription channel** intersection: the brand's most profitable and most defensible core.
 
 ---
 
@@ -144,7 +144,7 @@ pip install -r requirements.txt
 # 2. (Optional) regenerate the synthetic dataset
 python src/generate_dataset.py
 
-# 3. Run the full analysis — regenerates all figures + metrics
+# 3. Run the full analysis: regenerates all figures + metrics
 python src/analysis.py
 
 # 4. Or open the notebook to step through the analysis

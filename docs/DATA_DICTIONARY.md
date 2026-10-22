@@ -1,8 +1,8 @@
-# VITAE & CO. — Dataset Documentation
+# VITAE & CO.: Dataset Documentation
 
 **Brand:** VITAE & CO. (fictional)
-**Positioning:** Premium DTC pet ecommerce — aesthetic & longevity products for dogs and cats, national US market.
-**Date range:** January 2023 – May 2026
+**Positioning:** Premium DTC pet ecommerce: aesthetic & longevity products for dogs and cats, national US market.
+**Date range:** January 2023 to May 2026
 **Purpose:** Portfolio dataset for Business Analyst, Business Operations, and Consulting Associate work samples.
 
 ---
@@ -35,7 +35,7 @@ Master product catalog.
 | price | float | Retail price USD |
 | cogs | float | Cost of goods sold per unit USD |
 | weight_oz | int | Shipping weight in ounces |
-| launched | date | Product launch date — two SKUs launched in 2024 to enable new-product cohort analysis |
+| launched | date | Product launch date, two SKUs launched in 2024 to enable new-product cohort analysis |
 
 ### 2. `customers.csv` (~4,200 rows)
 Customer master with attribution and segmentation.
@@ -65,7 +65,7 @@ Order-level transactions with full unit economics.
 | is_subscription_order | bool | True = recurring subscription delivery |
 | shipping_method | str | Standard / Expedited |
 | promo_code | str | BLACK_FRIDAY / CYBER_MONDAY / MOTHERS_DAY / VDAY_PETS / SUMMER_SALE / WELCOME10 / blank |
-| discount_pct | float | 0.0 – 0.25 |
+| discount_pct | float | 0.0 to 0.25 |
 | gross_revenue | float | Pre-discount revenue |
 | discount_amount | float | $ discount applied |
 | net_revenue | float | Post-discount revenue (the "real" revenue) |
@@ -73,8 +73,8 @@ Order-level transactions with full unit economics.
 | cogs | float | Total product cost |
 | fulfillment_cost | float | Pick-pack-ship cost: $3.50 base + $0.045/oz |
 | payment_processing_fee | float | ~2.9% + $0.30 |
-| gross_margin | float | net_revenue – cogs |
-| contribution_margin | float | net_revenue – cogs – fulfillment – payment_fee |
+| gross_margin | float | net_revenue - cogs |
+| contribution_margin | float | net_revenue - cogs - fulfillment - payment_fee |
 | order_status | str | Delivered / Returned / Refunded - Partial |
 | csat_score | float | 1–5, populated for delivered orders only |
 | items_count | int | Total units in the order |
@@ -110,7 +110,7 @@ Line-item detail for SKU-level analysis.
 | new_customers | int | Net new customers acquired this month from this channel |
 | cac | float | spend / new_customers (blended CAC by channel-month) |
 
-### 6. `inventory.csv` (22 rows — current snapshot)
+### 6. `inventory.csv` (22 rows: current snapshot)
 
 | Field | Type | Description |
 |---|---|---|
@@ -128,7 +128,7 @@ Line-item detail for SKU-level analysis.
 | stock_status | str | Healthy / Low Stock / Overstocked / Stockout |
 | warehouse | str | Reno-NV / Atlanta-GA / NJ-Edison |
 
-### 7. `support_tickets.csv` (~4,400 rows — ~18% of orders generate tickets)
+### 7. `support_tickets.csv` (~4,400 rows: ~18% of orders generate tickets)
 
 | Field | Type | Description |
 |---|---|---|
@@ -149,13 +149,13 @@ Line-item detail for SKU-level analysis.
 
 The data was generated with intentional patterns so a sharp analyst can surface real insights:
 
-1. **Channel efficiency divergence** — TikTok has the lowest CAC but smaller volume; Podcast has the highest CAC; Email/Referral is the most efficient.
-2. **Segment-driven LTV gap** — VIP Longevity Loyalists order ~14×/year at 1.4× AOV; Bargain Hunters churn faster and depress margin.
-3. **Subscription economics** — Subscribers get free shipping (margin hit) but order more frequently in supplements/nutrition.
-4. **Product portfolio quadrants** — Longevity Supplements = highest margin, Lifestyle & Home = highest AOV but lowest margin %.
-5. **Q4 holiday spike** — November–December are 35–45% above baseline.
-6. **Return rate variance** — Lifestyle Buyers return at ~11% vs 6% base, and first-time buyers return at ~9%.
-7. **Inventory imbalance** — Some SKUs are overstocked, some at risk of stockout. Worth a reorder plan.
-8. **Cohort retention** — Newer cohorts (2024+) behave differently from 2023 vintages; this enables cohort/LTV analysis.
+1. **Channel efficiency divergence**: TikTok has the lowest CAC but smaller volume; Podcast has the highest CAC; Email/Referral is the most efficient.
+2. **Segment-driven LTV gap**: VIP Longevity Loyalists order ~14×/year at 1.4× AOV; Bargain Hunters churn faster and depress margin.
+3. **Subscription economics**: Subscribers get free shipping (margin hit) but order more frequently in supplements/nutrition.
+4. **Product portfolio quadrants**: Longevity Supplements = highest margin, Lifestyle & Home = highest AOV but lowest margin %.
+5. **Q4 holiday spike**: November–December are 35–45% above baseline.
+6. **Return rate variance**: Lifestyle Buyers return at ~11% vs 6% base, and first-time buyers return at ~9%.
+7. **Inventory imbalance**: Some SKUs are overstocked, some at risk of stockout. Worth a reorder plan.
+8. **Cohort retention**: Newer cohorts (2024+) behave differently from 2023 vintages; this enables cohort/LTV analysis.
 
 Built for: Emma Larroze, May 2026.

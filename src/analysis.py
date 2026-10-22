@@ -1,5 +1,5 @@
 """
-VITAE & CO. — Strategic Diagnostic
+VITAE & CO.: Strategic Diagnostic
 Full analytical workpaper: business diagnostic, customer/growth, product, ops, strategy.
 
 Author: Emma Larroze
@@ -76,9 +76,9 @@ def save(fig, name):
     print(f'  saved {name}.png')
 
 # ======================================================================
-# PART 1 — BUSINESS DIAGNOSTIC
+# PART 1: BUSINESS DIAGNOSTIC
 # ======================================================================
-print("PART 1 — Business Diagnostic")
+print("PART 1: Business Diagnostic")
 
 delivered = orders[orders['order_status'] != 'Returned'].copy()
 gmv = orders['gross_revenue'].sum()
@@ -142,9 +142,9 @@ ax.set_ylabel('Net Revenue')
 save(fig, '02_yoy_revenue')
 
 # ======================================================================
-# PART 2 — CUSTOMER & GROWTH
+# PART 2: CUSTOMER & GROWTH
 # ======================================================================
-print("PART 2 — Customer & Growth")
+print("PART 2: Customer & Growth")
 
 # --- 2a. Segment economics (validated from data, not label) ---
 cust_orders = orders.groupby('customer_id').agg(
@@ -266,15 +266,15 @@ axes[1].bar(sub_econ['label'], sub_econ['avg_orders'], color=[GREY, TEAL])
 axes[1].set_title('Avg Orders per Customer', loc='left', fontsize=11)
 for i,v in enumerate(sub_econ['avg_orders']):
     axes[1].text(i, v, f'{v:.1f}', ha='center', va='bottom', fontweight='bold')
-fig.suptitle('Subscribers are worth multiples of one-time buyers — the core growth flywheel',
+fig.suptitle('Subscribers are worth multiples of one-time buyers: the core growth flywheel',
              x=0.02, ha='left', fontsize=12, fontweight='bold', color=NAVY)
 fig.tight_layout()
 save(fig, '07_subscription_economics')
 
 # ======================================================================
-# PART 3 — PRODUCT & MERCHANDISING
+# PART 3: PRODUCT & MERCHANDISING
 # ======================================================================
-print("PART 3 — Product & Merchandising")
+print("PART 3: Product & Merchandising")
 
 # --- 3a. Category profitability ---
 cat = items.merge(orders[['order_id','order_status']], on='order_id')
@@ -338,9 +338,9 @@ ax.legend(handles=handles, frameon=False, fontsize=9, loc='upper center', ncol=2
 save(fig, '09_sku_bcg_matrix')
 
 # ======================================================================
-# PART 4 — OPERATIONS & EXPERIENCE
+# PART 4: OPERATIONS & EXPERIENCE
 # ======================================================================
-print("PART 4 — Operations & Experience")
+print("PART 4: Operations & Experience")
 
 # --- 4a. Inventory health ---
 inv_status = inventory['stock_status'].value_counts()
@@ -369,7 +369,7 @@ metrics['support'] = {
 fig, ax = plt.subplots(figsize=(10,5))
 bars = ax.barh(tt.index[::-1], tt.values[::-1], color=NAVY, alpha=0.85)
 ax.set_xlabel('Tickets')
-ax.set_title(f'Shipping delays dominate support volume — {ticket_rate*100:.0f}% of orders generate a ticket', loc='left', fontsize=11.5)
+ax.set_title(f'Shipping delays dominate support volume: {ticket_rate*100:.0f}% of orders generate a ticket', loc='left', fontsize=11.5)
 save(fig, '11_support_mix')
 
 # --- 4c. Return rate by segment ---
@@ -383,7 +383,7 @@ bars = ax.barh(ret['segment'], ret['return_rate']*100, color=[RED if v>0.09 else
 for b,v in zip(bars, ret['return_rate']):
     ax.text(v*100, b.get_y()+b.get_height()/2, f' {v*100:.1f}%', va='center', fontsize=9, fontweight='bold', color=NAVY)
 ax.set_xlabel('Return Rate %')
-ax.set_title('Lifestyle Buyers return at nearly double the base rate — a margin leak to fix', loc='left', fontsize=11.5)
+ax.set_title('Lifestyle Buyers return at nearly double the base rate: a margin leak to fix', loc='left', fontsize=11.5)
 save(fig, '12_return_rate')
 
 # ======================================================================
